@@ -1,0 +1,349 @@
+.container {
+    font-family: sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+background-color: black;
+/* display: none; */
+z-index: 1000;
+padding: 10px 0;
+}
+.navul label i{
+   color: white;
+}
+.navul input {
+    display: none;
+}
+.navul label {
+    display: none;
+} 
+.navul ul {
+ display: flex;
+}
+.navul ul li{
+    list-style: none;
+}
+.navul ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.navbtn {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+
+}
+.logo img {
+    width: 150px;
+}
+.mask {
+    background-color: rgba(0, 0, 255, 0.511);
+    width: 100%;
+    height: 100%;
+}
+.slec1 {
+height: 100vh;
+background-image: url(./images/banner-bg-1-1.png);
+background-size: cover;
+background-position: center;
+color: white;
+}
+
+@media (max-width:1200px) {
+    .navul ul {
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 2;
+    transform: translateX(-100%);
+    transition: .3s;
+    z-index: 10;
+    }
+    .navul ul li {
+        margin: 15px 0;
+    }
+    .navul ul li a{
+        color: black;
+    }
+    .navbtn {
+        display: none;
+    }
+    .navul label{
+        font-size: 30px;
+          display: block;
+          position: relative;
+       left: 800%;
+    }
+    .INP:checked ~ ul {
+        transform: translateX(0%);
+    }
+    }
+    .slec1 img{
+        width: 100%;
+    }
+.slec1 h1{
+font-size: 50px;
+}
+.slec1 button{
+    width: 170px;
+    height: 35px;
+    background-color: yellow;
+    border: 1px solid yellow;
+    border-radius: 35px;
+    color: black;
+}
+.sectionrow {
+    width: 100%;
+    height: 100%;
+ 
+}
+.sectionrow .col-6 {
+    position: relative;
+    top: 300px;
+  
+    justify-content: center;
+    align-items: center;
+}
+.slec2{
+    padding: 20px 0;
+}
+.slec2 img{
+ width: 100px;
+}
+.slec3 button{
+width: 60px;
+height: 60px;
+background-color: darkblue;
+border: 1px solid darkblue;
+font-size: 30px;
+color: white;
+border-radius: 50%;
+}
+.bord{
+    border-left: 1px solid dimgray;
+    border-right: 1px solid dimgray;
+}
+.slec3 .col-4 {
+    padding: 20px 0;
+}
+.slec4 .col-12{
+    font-size:30px;
+}
+.mask {
+    height: 500px;
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(./images/video-1-1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 8px;
+}
+.mask button{
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 50%;
+    font-size: 20px;
+    position: relative;
+   top: 250px;
+}
+.slec5 {
+    padding: 20px 0;
+}
+.slec5 h1{
+    font-size: 30px;
+}
+.slec5 i{
+    color: orange;
+}
+.slec5 button{
+    width: 170px;
+    height: 35px;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 35px;
+    color: black;
+}
+.slec6 .ekran{
+    position: relative;
+    left: 35px;
+    top: 70px;
+    transition-duration: 3s;
+}
+.iphon{
+    position: relative;
+    left: -40px;
+    display: none;
+    transition-duration: 3s;
+}
+.sii{
+    width: 220px;
+    height: 400px;
+ transition-duration: 0s;
+ position: relative;
+ left: -40px;
+}
+.sii:hover {
+   background-image: url(./images/app-screen-moc-1-1.png); 
+   background-position: center;
+   background-size: cover;
+}
+.slec6 h1{
+    font-size: 30px;
+}
+.slec7 .col-12 h1{
+    font-size: 30px;
+}
+.slec7 .col-12{
+    padding: 40px 0;
+}
+.slec7 .col-3 {
+    border: 1px solid dimgray;
+    border-radius: 10px;
+    padding: 50px 0;
+    margin: 50px 0;
+    transition-duration: 1s;
+}
+.slec7 .col-3 h1 {
+    font-size: 30px;
+}
+.slec7 button{
+    width: 170px;
+    height: 35px;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 35px;
+    color: black;
+    transition-duration: 2s;
+}
+.slec7 .col-3:hover{
+    background-image: url(./images/footer-bg-1-1.png);
+    background-size: cover;
+    background-position: right;
+   transform: scale(1.2);
+    color: white;
+}
+.slec7 .col-3:hover button{
+    background-color: white;
+    border: 1px solid white;
+}
+.slec8 {
+    padding: 50px 0;
+}
+.slec8 .col-6 h1 {
+    font-size: 50px;
+    margin-left: 20px;
+}
+.slec8 .col-6 p{
+    line-height: 35px;
+    font-size: 25px;
+    margin-left: 20px;
+}
+.slec8 .col-6 span {
+    color: orange;
+    margin-left: 20px;
+}
+.slec9 .col-12 h1{
+font-size: 45px;
+}
+.slec9 .col-3 button{
+    width: 200px;
+    height: 200px;
+    background-color: darkblue;
+    border: 1px solid  darkblue;
+    color: white;
+    border-radius: 50%;
+}
+.slec9 .col-3 h1 {
+    font-size: 40px;
+}
+.slec10 {
+    margin: 80px 0;
+}
+.slec10 .col-12 {
+    font-size: 30px;
+    padding: 20px 0;
+}
+.slec10 .container{
+    background-color: #F5F5F5;
+}
+.slec10 .col-4 {
+    padding: 40px 20px;
+}
+.slec10 span{
+    color: orange;
+}
+.slec11 input{
+ width: 600px;
+ height: 35px;
+ background-color: #F5F5F5;
+ color: rgba(105, 105, 105, 0.554);
+ border: 1px solid #F5F5F5;
+ border-radius: 35px;
+}
+@media (max-width:576px)  {
+.slec11 input{
+    width: 300px;
+}
+}
+@media (min-width:576px) and (max-width:762px) {
+    .slec11 input{
+        width: 300px;
+    }
+}
+.slec11 .col-12 h1{
+    font-size: 30px;
+    margin: 10px 0;
+}
+.slec11{
+    padding: 40px 0;
+}
+.slec11 .col-12 button{
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    position: relative;
+    top: 2px;
+    left: -37px;
+}
+.slec12  {
+    background-image: url(./images/footer-bg-1-1.png);
+    background-position: center;
+    background-size: cover;
+    padding: 90px 0;
+    color: white;
+    padding-bottom: 20px;
+}
+.slec12 .col-2 p {
+    line-height: 35px;
+}
+.slec12 .col-2 button{
+    width: 140px;
+    height: 50px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 40px;
+   
+}
+.slec12 .col-2  i{
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    left: -20px;
+}
